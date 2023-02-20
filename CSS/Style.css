@@ -1,0 +1,127 @@
+:root {
+  /* Primary */
+  --Cyan: hsl(179, 62%, 43%);
+  --Light-Cyan: hsl(179, 47%, 52%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  /* Neutral */
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: var(--Light-Gray);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: 39.6rem;
+  height: 29.8rem;
+}
+
+main .top {
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+main .top h1 {
+  color: var(--Light-Cyan);
+}
+
+main .top h2 {
+  font-size: 1.1em;
+  margin-top: 6px;
+  color: var(--Bright-Yellow);
+}
+
+main .top p {
+  margin-top: -9px;
+  line-height: 27px;
+}
+
+main .left {
+  flex: 2;
+  background-color: var(--Cyan);
+  border-bottom-left-radius: 10px;
+}
+
+main .left h1 {
+  color: white;
+  font-size: 1.1em;
+}
+
+main .left h2 {
+  font-size: 2em;
+  position: relative;
+  color: white;
+  top: 4%;
+}
+
+main .left h2::after {
+  content: "per month";
+  font-size: 0.47em;
+  margin-left: 12px;
+  position: relative;
+  top: -17%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .5);
+}
+
+main .left p {
+  font-size: 15px;
+  letter-spacing: 0px;
+  position: relative;
+  color: white;
+  margin-bottom: 1.1em;
+}
+
+main .left button {
+  height: 25%;
+  background-color: var(--Bright-Yellow);
+  border: none;
+  font-weight: 700;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 25%);
+}
+
+main .right {
+  flex: 2;
+  background-color: hsl(179, 62%, 63%);
+  border-bottom-right-radius: 10px;
+}
+
+main .right h1 {
+  font-size: 1.1em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+main .right ul {
+  color: rgba(255, 255, 255, .5);
+  list-style: none;
+  flex: 1;
+}
+
+
+main .top,
+main .left,
+main .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
